@@ -11,6 +11,7 @@ import org.apache.pdfbox.io.RandomAccessReadBufferedFile;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 
+import ru.unassignederror.Pdf2CsvBank.extractors.sberbank.SberPaymentV5;
 import ru.unassignederror.Pdf2CsvBank.extractors.sberbank.SberPaymentV6;
 
 public class Pdf2CsvBank {
@@ -19,6 +20,7 @@ public class Pdf2CsvBank {
 	public Pdf2CsvBank() {
 		extractors = new ArrayList<>();
 		extractors.add(new SberPaymentV6());
+		extractors.add(new SberPaymentV5());
 	}
 
 	public static void main(String[] args) {
