@@ -1,0 +1,21 @@
+# Eclipse-specific files
+.project
+.classpath
+.settings/
+
+# Java compiled files and build artifacts
+*.class
+*.jar
+*.war
+*.ear
+/bin/
+/target/
+
+# Log files
+*.log
+
+# Workspace metadata (optional, can be ignored if not shared across developers)
+.metadata/
+
+# Generated source files (if applicable, e.g., from Xtext/EMF)
+/src-gen/
